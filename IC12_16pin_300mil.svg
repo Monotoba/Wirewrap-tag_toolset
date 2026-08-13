@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.620mm" height="22.180mm" viewBox="0 0 11.620 22.180">
+<rect x="0.15" y="0.15" width="11.320" height="21.880" rx="0.6" fill="white" stroke="black" stroke-width="0.20"/>
+<path d="M 3.810,0.15 Q 5.810,1.400 7.810,0.15" fill="none" stroke="black" stroke-width="0.20"/>
+<circle cx="2.000" cy="2.200" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="3.125" y="2.200" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="start" dominant-baseline="middle">1</text>
+<circle cx="2.000" cy="4.740" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="3.125" y="4.740" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="start" dominant-baseline="middle">2</text>
+<circle cx="2.000" cy="7.280" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="3.125" y="7.280" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="start" dominant-baseline="middle">3</text>
+<circle cx="2.000" cy="9.820" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="3.125" y="9.820" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="start" dominant-baseline="middle">4</text>
+<circle cx="2.000" cy="12.360" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="3.125" y="12.360" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="start" dominant-baseline="middle">5</text>
+<circle cx="2.000" cy="14.900" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="3.125" y="14.900" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="start" dominant-baseline="middle">6</text>
+<circle cx="2.000" cy="17.440" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="3.125" y="17.440" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="start" dominant-baseline="middle">7</text>
+<circle cx="2.000" cy="19.980" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="3.125" y="19.980" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="start" dominant-baseline="middle">8</text>
+<circle cx="9.620" cy="19.980" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="8.495" y="19.980" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="end" dominant-baseline="middle">9</text>
+<circle cx="9.620" cy="17.440" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="8.495" y="17.440" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="end" dominant-baseline="middle">10</text>
+<circle cx="9.620" cy="14.900" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="8.495" y="14.900" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="end" dominant-baseline="middle">11</text>
+<circle cx="9.620" cy="12.360" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="8.495" y="12.360" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="end" dominant-baseline="middle">12</text>
+<circle cx="9.620" cy="9.820" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="8.495" y="9.820" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="end" dominant-baseline="middle">13</text>
+<circle cx="9.620" cy="7.280" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="8.495" y="7.280" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="end" dominant-baseline="middle">14</text>
+<circle cx="9.620" cy="4.740" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="8.495" y="4.740" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="end" dominant-baseline="middle">15</text>
+<circle cx="9.620" cy="2.200" r="0.575" fill="white" stroke="black" stroke-width="0.16"/>
+<text x="8.495" y="2.200" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.450px" text-anchor="end" dominant-baseline="middle">16</text>
+<g transform="translate(4.885 11.090) rotate(90)"><text x="0" y="0" font-family="DejaVu Sans,Arial,sans-serif" font-size="1.850px" font-weight="bold" text-anchor="middle" dominant-baseline="central" alignment-baseline="central">IC12</text></g>
+</svg>
