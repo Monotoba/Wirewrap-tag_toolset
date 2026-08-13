@@ -5,9 +5,19 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-A small PySide6 desktop application by [Monotoba](https://github.com/Monotoba) for designing matching wire-wrap socket labels and 3D-printable tags.
+A small PySide6 desktop application for designing matching wire-wrap socket labels and 3D-printable tags.
 
-Set the part ID, DIP pin count, and pin-row width, inspect the live previews, then generate a physical-size label sheet and a matching STL model in one click.
+If you enjoy wire-wrapping prototype or one-off circuits—and perhaps find spending countless hours with a wire-wrap tool strangely therapeutic—you have probably discovered an unfortunate fact: the wire, sockets, and hand tools are still fairly easy to find, but the little identification tags that fit over DIP sockets have all but disappeared.
+
+That was a problem worth fixing.
+
+To support my own obsession with hardware development, prototyping, and tinkering, I created **Wire-Wrap Tag Designer**: a simple set of tools for producing both the plastic socket tags and the printed identification labels that go on top of them. The finished tags can show the component ID and pin numbers right beside the corresponding socket pins, making it much easier to keep your place while wiring a crowded vectorboard or Veroboard.
+
+The plastic tags are generated as STL models and can be printed on an ordinary 3D printer. Because the pin holes are small, a well-tuned printer helps—especially extrusion, pressure advance, and retraction settings. If your printer is feeling less cooperative, you may occasionally need to clean out a hole with a small drill bit. Even then, that is often preferable to repeatedly counting socket pins across a densely populated board.
+
+While the plastic tags are printing, you can print the matching labels. Use ordinary paper and adhesive, self-adhesive label stock, or common peel-and-stick sheets such as Avery-compatible labels.
+
+Set the part ID, DIP pin count, and pin-row width, inspect the live previews, then generate a dimensionally accurate label sheet and matching STL model with a single click.
 
 ![Example 16-pin wire-wrap label](wirewrap-label.svg)
 
