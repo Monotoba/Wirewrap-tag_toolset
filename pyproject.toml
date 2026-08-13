@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wirewrap-tag-designer"
+version = "1.0.0"
+description = "Design printable wire-wrap socket labels and matching 3D tag models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Randall Morgan (Monotoba)" },
+]
+keywords = ["wire-wrap", "electronics", "labels", "OpenSCAD", "PySide6"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: MacOS X",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications :: Qt",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+dependencies = [
+    "PySide6>=6.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/Monotoba/Wirewrap-tag_toolset"
+Repository = "https://github.com/Monotoba/Wirewrap-tag_toolset.git"
+Issues = "https://github.com/Monotoba/Wirewrap-tag_toolset/issues"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+wirewrap-tag-designer = "wirewrap_tag_designer.gui:main"
+wirewrap-labels = "wirewrap_tag_designer.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

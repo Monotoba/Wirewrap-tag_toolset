@@ -1,35 +1,92 @@
-# Wire-Wrap Tag Toolset v6
+# Wire-Wrap Tag Designer
 
-Changes in v6:
+A PySide6 desktop app for creating matching, printable wire-wrap socket labels and 3D-printable tags.
 
-- Pin numbers remain inside the two pin rows.
-- The part ID remains rotated top-to-bottom.
-- The part ID is now shifted **0.925 mm to the left** by default, roughly half of the default ID text height.
-- This clears the high-number/right-side pin-number column.
-- The horizontal offset is now parameterized with `--id-x-offset`.
+The startup screen keeps the normal job deliberately short:
 
-Example:
+1. Enter the device/part ID.
+2. Set the even DIP pin count.
+3. Choose the pin-row width (300, 400, 600, or 900 mil).
+4. Click **Generate label + printable page + STL**.
 
-```bash
-python3 wirewrap_labels.py --pins 16 --width 300 --id IC12 -o IC12.svg
-```
+The app shows live previews of the label, the print sheet, and an isometric tag model. The generated OpenSCAD/STL geometry uses the same pin pitch, holes, width, length, and margins as the label.
 
-Adjust the ID farther left:
+## Run it
 
-```bash
-python3 wirewrap_labels.py --pins 16 --width 300 --id IC12 --id-x-offset -1.2 -o IC12.svg
-```
+Python 3.10 or later is recommended.
 
-Move it back toward center:
+Linux and macOS:
 
 ```bash
-python3 wirewrap_labels.py --pins 16 --width 300 --id IC12 --id-x-offset -0.5 -o IC12.svg
+./scripts/setup.sh
+./scripts/run.sh
 ```
 
-The ID size is also adjustable:
+Windows PowerShell:
+
+```powershell
+.\scripts\setup.ps1
+.\scripts\run.ps1
+```
+
+Or activate the generated environment and run the installed command:
 
 ```bash
-python3 wirewrap_labels.py --pins 16 --width 300 --id IC12 --id-size 1.6 -o IC12.svg
+source .venv/bin/activate
+wirewrap-tag-designer
 ```
 
-Print labels at 100% / Actual Size with scaling disabled.
+OpenSCAD is optional for using the app, but required to produce the final STL. Without it, the app still exports the label, print sheet, PDF, and editable `.scad` model.
+
+## Generated files
+
+For a part called `IC12`, **Generate** creates:
+
+- `IC12_label.svg` — one label at exact physical size
+- `IC12_letter_sheet.svg` — labels laid out on a Letter sheet (A4 is also available)
+- `IC12_letter_sheet.pdf` — ready to print at 100% / Actual Size
+- `IC12_tag.scad` — editable parametric model
+- `IC12_tag.stl` — ready to slice, when OpenSCAD is installed
+- `IC12_settings.json` — a record of every setting used
+
+If the requested number of labels exceeds one sheet, numbered SVG sheets and a multi-page PDF are generated.
+
+> Print the PDF with **Actual Size** or **100%** selected. Disable “Fit to page” scaling.
+
+## Common and advanced controls
+
+Part ID, pin count, device width, and output folder stay on the main screen. **Design & print settings** contains the controls that are useful less often:
+
+- label width beyond each pin row
+- label extension beyond the top and bottom pins
+- pin pitch and hole diameter
+- pin-number distance from the inside hole edge and number size
+- part-ID orientation, size, horizontal/vertical position, and font
+- label, outline, pin-number, and part-ID colors
+- notch and corner dimensions
+- 3D tag thickness and optional center window
+- custom A4/Letter grids or Avery-compatible 5160/8160 through 5164/8164 sheets
+- automatic, unrotated, or 90-degree tag placement and copy count
+
+Settings persist between launches. **Restore Defaults** only resets the advanced dialog, leaving the current device ID, pin count, and width intact.
+
+## Command line
+
+The original command-line workflow remains available:
+
+```bash
+./scripts/labels.sh --pins 16 --width 300 --id IC12 -o IC12.svg
+```
+
+Create a print-page SVG:
+
+```bash
+./scripts/labels.sh --pins 16 --width 300 --id IC12 \
+  --paper A4 --copies 24 -o IC12_A4.svg
+```
+
+Run the automated geometry and SVG checks with:
+
+```bash
+./scripts/test.sh -q
+```
