@@ -1,14 +1,14 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "wirewrap-tag-designer"
-version = "1.0.0"
+version = "1.0.1"
 description = "Design printable wire-wrap socket labels and matching 3D tag models"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { file = "LICENSE" }
+license = "BSD-2-Clause"
 authors = [
     { name = "Randall Morgan (Monotoba)" },
 ]
@@ -18,7 +18,6 @@ classifiers = [
     "Environment :: MacOS X",
     "Environment :: Win32 (MS Windows)",
     "Environment :: X11 Applications :: Qt",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: MacOS",
     "Operating System :: Microsoft :: Windows",
     "Operating System :: POSIX :: Linux",
