@@ -6,6 +6,15 @@ All notable changes to this project are documented in this file. The format foll
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-09-22
+
+### Changed
+
+- New source and distributions use the BSD 2-Clause license; v1.0.0 retains
+  its original MIT terms.
+- Added a screenshot of the running designer and direct release download
+  instructions.
+
 ## [1.0.0] - 2026-08-12
 
 ### Added
@@ -16,5 +25,6 @@ All notable changes to this project are documented in this file. The format foll
 - Matching OpenSCAD source and optional STL generation.
 - Cross-platform setup, test, CLI, and application launch scripts.
 
-[Unreleased]: https://github.com/Monotoba/Wirewrap-tag_toolset/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/Monotoba/Wirewrap-tag_toolset/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/Monotoba/Wirewrap-tag_toolset/releases/tag/v1.0.1
 [1.0.0]: https://github.com/Monotoba/Wirewrap-tag_toolset/releases/tag/v1.0.0
