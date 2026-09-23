@@ -36,6 +36,9 @@ if ($Mode -eq "dev") {
 }
 
 Write-Host "Installing Wire-Wrap Tag Designer ($Mode)"
+& $VenvPython -m pip install --upgrade "setuptools>=77" wheel
+if ($LASTEXITCODE -ne 0) { throw "Could not update the Python build tools." }
+
 & $VenvPython -m pip install --no-build-isolation --editable $InstallTarget
 if ($LASTEXITCODE -ne 0) { throw "Package installation failed." }
 

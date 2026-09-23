@@ -29,6 +29,7 @@ else
 fi
 
 echo "Installing Wire-Wrap Tag Designer (${MODE#--})"
+"${VENV_DIR}/bin/python" -m pip install --upgrade "setuptools>=77" wheel
 "${VENV_DIR}/bin/python" -m pip install --no-build-isolation --editable "$INSTALL_TARGET"
 
 echo
