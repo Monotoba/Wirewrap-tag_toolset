@@ -3,7 +3,7 @@
 [![Cross-platform tests](https://github.com/Monotoba/Wirewrap-tag_toolset/actions/workflows/ci.yml/badge.svg)](https://github.com/Monotoba/Wirewrap-tag_toolset/actions/workflows/ci.yml)
 [![Build and release](https://github.com/Monotoba/Wirewrap-tag_toolset/actions/workflows/release.yml/badge.svg)](https://github.com/Monotoba/Wirewrap-tag_toolset/actions/workflows/release.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License: BSD 2-Clause](https://img.shields.io/badge/license-BSD--2--Clause-blue.svg)](LICENSE)
 
 A small PySide6 desktop application for designing matching wire-wrap socket labels and 3D-printable tags.
 
@@ -18,6 +18,10 @@ The plastic tags are generated as STL models and can be printed on an ordinary 3
 While the plastic tags are printing, you can print the matching labels. Use ordinary paper and adhesive, self-adhesive label stock, or common peel-and-stick sheets such as Avery-compatible labels.
 
 Set the part ID, DIP pin count, and pin-row width, inspect the live previews, then generate a dimensionally accurate label sheet and matching STL model with a single click.
+
+![Wire-Wrap Tag Designer running on Linux with a 16-pin IC12 label preview](wirewrap-designer.png)
+
+*The application running on Linux with a 16-pin label preview; the screenshot does not demonstrate printing or STL generation.*
 
 ![Example 16-pin wire-wrap label](wirewrap-label.svg)
 
@@ -55,6 +59,21 @@ OpenSCAD is optional if you only need SVG, PDF, or editable `.scad` output.
 Every push and pull request runs the Python, CLI, and headless GUI tests on current GitHub-hosted Linux, macOS, and Windows runners.
 
 ## Installation
+
+For the quickest Python installation, download the wheel from the
+[latest GitHub release](https://github.com/Monotoba/Wirewrap-tag_toolset/releases/latest),
+create a virtual environment, and install the downloaded file:
+
+```bash
+python -m venv .venv
+. .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
+python -m pip install ./wirewrap_tag_designer-1.0.1-py3-none-any.whl
+wirewrap-tag-designer
+```
+
+Run these commands in the folder containing the downloaded wheel. This is a
+Python package, not a standalone installer. OpenSCAD is only needed to export
+STL files.
 
 Clone the repository, then use the setup command for your platform.
 
@@ -237,4 +256,7 @@ Security reports should use GitHub's private vulnerability reporting flow descri
 
 ## License
 
-Released under the [MIT License](LICENSE).
+The current source and v1.0.1 distribution use the
+[BSD 2-Clause License](LICENSE), which requires preserving its copyright notice
+and license terms. The v1.0.0 release remains under the MIT terms included in
+that release.
