@@ -2,6 +2,8 @@
 
 [![Cross-platform tests](https://github.com/Monotoba/Wirewrap-tag_toolset/actions/workflows/ci.yml/badge.svg)](https://github.com/Monotoba/Wirewrap-tag_toolset/actions/workflows/ci.yml)
 [![Build and release](https://github.com/Monotoba/Wirewrap-tag_toolset/actions/workflows/release.yml/badge.svg)](https://github.com/Monotoba/Wirewrap-tag_toolset/actions/workflows/release.yml)
+[![GitHub release](https://img.shields.io/github/v/release/Monotoba/Wirewrap-tag_toolset)](https://github.com/Monotoba/Wirewrap-tag_toolset/releases/latest)
+[![GitHub downloads](https://img.shields.io/github/downloads/Monotoba/Wirewrap-tag_toolset/total)](https://github.com/Monotoba/Wirewrap-tag_toolset/releases)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: BSD 2-Clause](https://img.shields.io/badge/license-BSD--2--Clause-blue.svg)](LICENSE)
 
